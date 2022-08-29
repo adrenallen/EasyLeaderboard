@@ -4,12 +4,12 @@ module.exports = {
     games: ["easy-leaderboard-example"],
     validateScore(game, name, score, metaData, validation){
       var validateObj = {
-          name,
-          score,
           game,
-          metaData
+          metaData,
+          name,
+          score
       };
-
+      
       var hash = crypto.createHash("sha256")
           .update(JSON.stringify(validateObj))
           .digest("hex");
@@ -17,3 +17,5 @@ module.exports = {
       return hash == validation;
     },
   };
+
+

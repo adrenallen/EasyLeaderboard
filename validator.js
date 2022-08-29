@@ -1,4 +1,4 @@
-const { countReset } = require("console");
+const fs = require('fs');
 const crypto = require("crypto");
 
 var validators = {};
@@ -8,7 +8,12 @@ const validatorFiles = fs.readdirSync('./validators').filter(file => file.endsWi
 for (const file of validatorFiles) {
     const validator = require(`./validators/${file}`);
     validator.games.forEach(game => {
-        validators[game] = validator.validateScore
+        if (validators[game]) {
+            console.error(`Validator for game ${game} is defined a second time in /validators/${file}. Skipping second definition.`);
+        } else {
+            validators[game] = validator;
+        }
+        
     });
 }
 

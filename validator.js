@@ -1,4 +1,5 @@
 const fs = require('fs');
+const basicValidation = require("./validators/generic_hash.js");
 
 var validators = {};
 
@@ -25,6 +26,18 @@ function validateScore(game, name, score, metaData = "", validation = "") {
             }
         }
     }
+
+    // This check allows any game to use the basic hash validation
+    // by ending their game key name with '-basic-validation'
+    // this allows for backwards compatibility with old games
+    // but lets new games opt-into the new basic validation :)
+    if (game.endsWith("-basic-validation")) {
+        if (!basicValidation.validateScore(game, name, score, metaData, validation)){
+            return false;
+        }
+    }
+
+    // If we get here all validation passed, return true!
     return true;
 }
 

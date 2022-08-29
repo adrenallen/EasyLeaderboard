@@ -1,7 +1,7 @@
 const crypto = require("crypto");
 
 module.exports = {
-    games: ["easy-leaderboard-example"],
+    games: [],
     validateScore(game, name, score, metaData, validation){
       var validateObj = {
           game,
@@ -9,7 +9,7 @@ module.exports = {
           name,
           score
       };
-      
+
       var hash = crypto.createHash("sha256")
           .update(JSON.stringify(validateObj))
           .digest("hex");

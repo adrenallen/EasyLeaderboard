@@ -9,9 +9,10 @@ for (const file of validatorFiles) {
     const validator = require(`./validators/${file}`);
     validator.games.forEach(game => {
         if (validators[game]) {
-            console.error(`Validator for game ${game} is defined a second time in /validators/${file}. Skipping second definition.`);
+            console.error(`Validator for game ${game} is defined again in /validators/${file}. Aggregating validation checks.`);
+            validators[game].push(validator);
         } else {
-            validators[game] = validator;
+            validators[game] = [validator];
         }
         
     });
@@ -19,7 +20,11 @@ for (const file of validatorFiles) {
 
 function validateScore(game, name, score, metaData = "", validation = "") {
     if (validators[game]) {
-        return validators[game].validateScore(game, name, score, metaData, validation);
+        for (let i = 0; i < validators[game].length; i++) {
+            if (!validators[game][i].validateScore(game, name, score, metaData, validation)) {
+                return false;   // if any validators fail, return false
+            }
+        }
     }
     return true;
 }

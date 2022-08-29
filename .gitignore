@@ -1,2 +1,5 @@
 .env
 node_modules
+validators/*
+!validators/generic_hash.js
+!validators/example.js

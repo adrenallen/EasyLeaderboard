@@ -10,7 +10,14 @@
         - Repl.it has an always on tier of subscription. You can again just fork this repo and Replit can easily import it so you can edit it live. You may also be able to modify the app to use [the Replit included DB by using the code from this Replit that adds a layer of abstraction](https://replit.com/@adrenallen/replit-db-orm)
 
 
+## Defining new validators
+Validators are defined under the `/validators` folder. You can make a copy of `/validators/example.js` and fill in your own game's key. 
 
+Fill out the `validateScore` function with logic to validate scores that are submitted! 
+
+Your app will need to be rebooted for changes to take effect.
+
+_Note: You can define more than one validator for a given game, and they will all be run to validate a score. If any fail, then the submission will be rejected._
 
 ## Clients
 [Godot 4 Game Engine Client](https://github.com/adrenallen/EasyLeaderboard-Godot)

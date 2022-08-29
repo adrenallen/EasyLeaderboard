@@ -15,6 +15,8 @@ async function insertNewScore(game, name, score, metaData, validation = "") {
             metaData,
             date: Date.now()
         });
+    } else {
+        console.log(`Score submission for ${game} for name ${name} failed to validate and was rejected`);
     }
     return false;    
 }

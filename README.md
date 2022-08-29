@@ -21,3 +21,10 @@ _Note: You can define more than one validator for a given game, and they will al
 
 ## Clients
 [Godot 4 Game Engine Client](https://github.com/adrenallen/EasyLeaderboard-Godot)
+
+## TODO
+- [] Proper paging system
+- [] Better response to submitted scores (including what # the score is)
+
+### Stretch Goals
+- [] Repl.it DB support

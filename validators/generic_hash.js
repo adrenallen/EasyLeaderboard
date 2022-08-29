@@ -1,3 +1,5 @@
+const crypto = require("crypto");
+
 module.exports = {
     games: ["easy-leaderboard-example"],
     validateScore(game, name, score, metaData, validation){

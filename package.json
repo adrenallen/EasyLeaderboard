@@ -1,7 +1,7 @@
 {
-  "name": "ezlb",
+  "name": "EasyLeaderboard",
   "version": "1.0.0",
-  "description": "",
+  "description": "A quick to setup and easily configurable leaderboard",
   "main": "index.js",
   "scripts": {
     "start": "node index.js"

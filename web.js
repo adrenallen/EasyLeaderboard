@@ -41,7 +41,7 @@ function startWebServer() {
   registerScoreEndpoints();
 
   app.listen(port, () => {
-    console.log("Web server running... Port: " + port);
+    console.log(`Easy Leaderboard is running on port ${port}`);
   });
 
   return app;

@@ -15,6 +15,7 @@ Don't need custom score validation or don't want to host a server? Use a client 
   * [:white_check_mark: Validators](#white_check_mark-validators)
     + [Example validator](#example-validator)
 - [:package: Ready To Go Clients](#package-ready-to-go-clients)
+  * [Godot 4 Client](godot-4-client)
 - [:construction_worker: Coming Soon](#construction_worker-coming-soon)
 - [:man_scientist: Future Goals](#man_scientist-future-goals)
 
@@ -85,7 +86,7 @@ module.exports = {
 _Note: You can define more than one validator for a given game, and they will all be run to validate a score. If any fail, then the submission will be rejected._
 
 ## :package: Ready To Go Clients
-[Godot 4 Game Engine Client](https://github.com/adrenallen/EasyLeaderboard-Godot)
+### [Godot 4 Client](https://github.com/adrenallen/EasyLeaderboard-Godot)
 
 ## :construction_worker: Coming Soon
 - [ ] Proper paging system

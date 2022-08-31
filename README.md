@@ -1,4 +1,4 @@
-# Easy Leaderboard
+# EasyLeaderboard
 
 #### **Add a leaderboard to your game in under 10 minutes!**
 
@@ -22,6 +22,7 @@
     + [Example validator](#example-validator)
 - [:rocket: Ready To Go Clients](#rocket-ready-to-go-clients)
   * [Godot 4 Client](#godot-4-client)
+- [:bulb: Game Jam Suggestions](#bulb-game-jam-suggestions)
 - [:parachute: Coming Soon](#parachute-coming-soon)
 - [:man_scientist: Future Goals](#man_scientist-future-goals)
 
@@ -95,6 +96,15 @@ _Note: You can define more than one validator for a given game, and they will al
 
 ## :rocket: Ready To Go Clients
 ### [Godot 4 Client](https://github.com/adrenallen/EasyLeaderboard-Godot)
+
+## :bulb: Game Jam Suggestions
+For game jams, you likely will not need more than basic validation.
+
+By using a game key ending with `-basic-validation`, all scores will automatically be checked for payload tampering via a validation hash. This is easily circumvented by anyone that _really_ tries to cheat, but for the sake of quick/short games it will generally suffice to prevent spoofed scores.
+
+If your game can't use a client above, you can [see how basic validation works here](validators/generic_hash.js)
+
+You can optionally use the free hosted version of EasyLeaderboard by pointing your game at [https://lb.userdefined.io](https://lb.userdefined.io).
 
 ## :parachute: Coming Soon
 - [ ] Proper paging system

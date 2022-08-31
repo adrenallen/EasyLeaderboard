@@ -23,9 +23,9 @@ Request Payload
 ### Get game scores
 `/games/<game key>` - `GET`
 
-Request optional `GET` params
+Optional query params
 
-`asc` - `true/false` Sorts by ascending order if true
+`asc` - `true` Sorts by ascending order if true else defaults to descending by score
 
 `limit` - `<number of results to return>` Returns only the specified number of results
 

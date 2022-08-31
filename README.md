@@ -4,6 +4,21 @@ A quick to setup and flexible leaderboard system designed to help game developer
 
 Don't need custom score validation or don't want to host a server? Use a client listed below and the free hosted version by User Defined - [https://lb.userdefined.io](https://lb.userdefined.io)
 
+## Table of Contents
+- [:computer: API](#computer-api)
+  * [Submit a new score](#submit-a-new-score)
+  * [Get game scores](#get-game-scores)
+- [:gear: Setup](#gear-setup)
+  * [MongoDB](#mongodb)
+  * [NodeJS](#nodejs)
+- [:hammer_and_wrench: Customization](#hammer_and_wrench-customization)
+  * [:white_check_mark: Validators](#white_check_mark-validators)
+    + [Example validator](#example-validator)
+- [:package: Ready To Go Clients](#package-ready-to-go-clients)
+- [:construction_worker: Coming Soon](#construction_worker-coming-soon)
+- [:man_scientist: Future Goals](#man_scientist-future-goals)
+
+
 ## :computer: API
 
 ### Submit a new score

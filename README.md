@@ -8,7 +8,7 @@
 
 👨‍💻 Open source and easily setup for custom implementations
 
-💸 Optional free-hosting provided at [https://lb.userdefined.io](https://lb.userdefined.io) by [User Defined](https://userdefined.io).
+💸 Optional free-hosting provided at [https://lb.userdefined.io](https://lb.userdefined.io) by [User Defined](https://userdefined.io)
 
 ## Table of Contents
 - [:computer: API](#computer-api)

@@ -15,7 +15,7 @@ Don't need custom score validation or don't want to host a server? Use a client 
   * [:white_check_mark: Validators](#white_check_mark-validators)
     + [Example validator](#example-validator)
 - [:package: Ready To Go Clients](#package-ready-to-go-clients)
-  * [Godot 4 Client](godot-4-client)
+  * [Godot 4 Client](#godot-4-client)
 - [:construction_worker: Coming Soon](#construction_worker-coming-soon)
 - [:man_scientist: Future Goals](#man_scientist-future-goals)
 

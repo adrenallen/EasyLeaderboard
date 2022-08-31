@@ -8,15 +8,15 @@ Don't need custom score validation or don't want to host a server? Use a client 
 - [:computer: API](#computer-api)
   * [Submit a new score](#submit-a-new-score)
   * [Get game scores](#get-game-scores)
-- [:gear: Setup](#gear-setup)
+- [:package: Setup](#package-setup)
   * [MongoDB](#mongodb)
   * [NodeJS](#nodejs)
-- [:hammer_and_wrench: Customization](#hammer_and_wrench-customization)
+- [:wrench: Customization](#wrench-customization)
   * [:white_check_mark: Validators](#white_check_mark-validators)
     + [Example validator](#example-validator)
-- [:package: Ready To Go Clients](#package-ready-to-go-clients)
+- [:rocket: Ready To Go Clients](#rocket-ready-to-go-clients)
   * [Godot 4 Client](#godot-4-client)
-- [:construction_worker: Coming Soon](#construction_worker-coming-soon)
+- [:parachute: Coming Soon](#parachute-coming-soon)
 - [:man_scientist: Future Goals](#man_scientist-future-goals)
 
 
@@ -45,7 +45,7 @@ Optional query params
 
 `limit` - `<number of results to return>` Returns only the specified number of results
 
-## :gear: Setup
+## :package: Setup
 There are two requirements to run EasyLeaderboard.
 ### MongoDB
 The recommended way to quickly get an instance of MongoDB running is to use the free tier of MongoDB Cloud. [You can find more about that here.](https://www.mongodb.com/docs/drivers/node/current/quick-start/)
@@ -60,7 +60,7 @@ To make the application reachable and always online, you will want to host it so
     - Repl.it has an always-on tier of subscription. You can fork this repo and Replit can easily import it so you can edit it live. You may also be able to modify the app to use [Replit's key/value DB by using the code from this Replit that adds a layer of abstraction](https://github.com/adrenallen/replit-db-orm)
 
 
-## :hammer_and_wrench: Customization
+## :wrench: Customization
 
 ### :white_check_mark: Validators
 Validators are custom scripts which can be run to validate a submitted score before it is saved.
@@ -85,13 +85,15 @@ module.exports = {
 
 _Note: You can define more than one validator for a given game, and they will all be run to validate a score. If any fail, then the submission will be rejected._
 
-## :package: Ready To Go Clients
+## :rocket: Ready To Go Clients
 ### [Godot 4 Client](https://github.com/adrenallen/EasyLeaderboard-Godot)
 
-## :construction_worker: Coming Soon
+## :parachute: Coming Soon
 - [ ] Proper paging system
+- [ ] Godot 3.5 client
 - [ ] Better response to submitted scores (including what # the score is)
 
 ## :man_scientist: Future Goals
 - [ ] Repl.it DB support
 - [ ] Discord integration
+- [ ] SQLite support

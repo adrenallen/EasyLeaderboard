@@ -1,8 +1,14 @@
 # Easy Leaderboard
 
-A quick to setup and flexible leaderboard system designed to help game developers add a leaderboard to their games! Open source with ready to go game clients to make the process as quick and easy as possible.
+#### **Add a leaderboard to your game in under 10 minutes!**
 
-Don't need custom score validation or don't want to host a server? Use a client listed below and the free hosted version by User Defined - [https://lb.userdefined.io](https://lb.userdefined.io)
+🏃 Ready to go game clients make adding a leaderboard quick and easy
+
+🕵️ Extendable score validation system to protect against cheaters
+
+👨‍💻 Open source and easily setup for custom implementations
+
+💸 Optional free-hosting provided at [https://lb.userdefined.io](https://lb.userdefined.io) by [User Defined](https://userdefined.io).
 
 ## Table of Contents
 - [:computer: API](#computer-api)
@@ -35,6 +41,8 @@ Request Payload
     validation: <optional validation string>
 }
 ```
+
+_NOTE: Using a game key that ends with `-basic-validation` will cause that game to automatically use the basic hash check for payload tampering._
 
 ### Get game scores
 `/games/<game key>` - `GET`

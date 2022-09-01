@@ -39,7 +39,7 @@ Request Payload
     name: <player name>,
     score: <player score>,
     game: <game key>,
-    metaData: <optional game metadata>,
+    metaData: { <optional game metadata> },
     validation: <optional validation string>
 }
 ```

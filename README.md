@@ -107,11 +107,14 @@ If your game can't use a client above, you can [see how basic validation works h
 You can optionally use the free hosted version of EasyLeaderboard by pointing your game at [https://lb.userdefined.io](https://lb.userdefined.io).
 
 ## :parachute: Coming Soon
+- [ ] Landing page for `/` path
+- [ ] Remove `/games` endpoint, don't need it and it's a security issue
 - [ ] Proper paging system
 - [ ] Godot 3.5 client
 - [ ] Better response to submitted scores (including what # the score is)
 
 ## :man_scientist: Future Goals
+- [ ] Human readable HTML leaderboards for maximum easy mode setup 😏
 - [ ] Repl.it DB support
 - [ ] Discord integration
 - [ ] SQLite support

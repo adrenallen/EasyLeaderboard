@@ -1,4 +1,5 @@
 # EasyLeaderboard
+![EasyLeaderboard](images/ezlb-small.png)
 
 #### **Add a leaderboard to your game in under 10 minutes!**
 

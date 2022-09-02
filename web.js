@@ -14,12 +14,14 @@ app.use(cors())
 const { getGameOptions, insertNewScore, getGame } = require('./scoreboard');
 
 function registerScoreEndpoints() {
-  app.get('/games', (req, res) => {
+  // This is removed because it's a security problem
+  // it exists in case you want to build an index of your scoreboards though
+  // app.get('/games', (req, res) => {
     
-    getGameOptions().then(games => {
-      res.send(games);
-    });
-  });
+  //   getGameOptions().then(games => {
+  //     res.send(games);
+  //   });
+  // });
 
   app.get('/games/:game', async (req, res) => {
     var game = req.params.game;

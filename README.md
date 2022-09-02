@@ -109,9 +109,8 @@ You can optionally use the free hosted version of EasyLeaderboard by pointing yo
 
 ## :parachute: Coming Soon
 - [ ] Landing page for `/` path
-- [ ] Remove `/games` endpoint, don't need it and it's a security issue
-- [ ] Proper paging system
-- [ ] Godot 3.5 client
+- [x] Remove `/games` endpoint, don't need it and it's a security issue
+- [x] Proper paging system
 - [ ] Better response to submitted scores (including what # the score is)
 
 ## :man_scientist: Future Goals

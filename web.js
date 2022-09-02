@@ -23,6 +23,22 @@ function registerScoreEndpoints() {
   //   });
   // });
 
+  app.get('/', (req, res) => {
+    res.send(`
+    <html>
+      <div style="text-align:center">
+        <h2>EasyLeaderboard is running!</h2>
+        <br>
+        <a href="http://easyleaderboard.com" target="_blank">Learn more here</a>
+        <br>
+        <br>
+        <br>
+        <label style="font-size:80%;"><a href="https://twitter.com/garrett_makes" target="_blank">Made by Garrett (@garrett_makes)</a></label>
+      </div>
+    </html>
+    `)
+  });
+
   app.get('/games/:game', async (req, res) => {
     var game = req.params.game;
     var asc = req.query.asc || "false";
@@ -30,7 +46,7 @@ function registerScoreEndpoints() {
     limit = Math.min(100, limit); //only allow a max of 100 at a time
     var page = req.query.page || 1;
     res.send(await getGame(game, limit, asc == "true", page));
-  })
+  });
 
   app.post('/games/submit', async (req, res) => {
     if (req.body.name.length > 100) {

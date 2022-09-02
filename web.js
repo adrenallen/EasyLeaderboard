@@ -24,7 +24,7 @@ function registerScoreEndpoints() {
   app.get('/games/:game', async (req, res) => {
     var game = req.params.game;
     var asc = req.query.asc || "false";
-    var limit = req.query.limit || 10;
+    var limit = req.query.pagesize || req.query.limit || 10;
     limit = Math.min(100, limit); //only allow a max of 100 at a time
     var page = req.query.page || 1;
     res.send(await getGame(game, limit, asc == "true", page));

@@ -21,8 +21,8 @@ async function insertNewScore(game, name, score, metaData, validation = "") {
     return false;    
 }
 
-async function getGame(game, limit, ascending) {
-    return await Score.findByGame(game, limit, ascending);
+async function getGame(game, limit, ascending, page) {
+    return await Score.findByGame(game, limit, ascending, page);
 }
 
 module.exports = {

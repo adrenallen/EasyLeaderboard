@@ -11,13 +11,17 @@ const scoreSchema = new Schema({
   date: Date
 });
 
-scoreSchema.statics.findByGame = function(game, limit = 10, ascending = true) {
+scoreSchema.statics.findByGame = function(game, limit = 10, ascending = true, page = 1) {
   let order = "desc";
   if (ascending) {
     order = "asc";
   }
-  //return this.find({game}).sort({score: order}).limit(limit).exec();
-  return this.find({game}).sort({score: order}).exec();
+  
+  return this.find({game})
+    .sort({score: order})
+    .skip((page-1)*limit)
+    .limit(limit)
+    .exec();
 }
 
 

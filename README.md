@@ -155,14 +155,6 @@ If your game can't use a client above, you can [see how basic validation works h
 
 You can optionally use the free hosted version of EasyLeaderboard by pointing your game at [https://lb.userdefined.io](https://lb.userdefined.io).
 
-## :parachute: Coming Soon
-- [ ] Better documentation layout
-- [x] ~~Landing page for `/` path~~
-- [x] ~~Remove `/games` endpoint, don't need it and it's a security issue~~
-- [x] ~~Proper paging system~~
-- [x] ~~Better response to submitted scores (including what # the score is)~~
-
-
 ## :man_scientist: Future Goals
 - [ ] Human readable HTML leaderboards for maximum easy mode setup 😏
 - [ ] Landing page clean-up

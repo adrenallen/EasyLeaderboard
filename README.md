@@ -63,8 +63,6 @@ Optional query params
 
 `asc` - `true` Sorts by ascending order if true else defaults to descending by score
 
-`limit` - `<number of results to return>` Returns only the specified number of results. This is actually an alias for `pagesize`
-
 `pagesize` - `<number>` Number of results to return per page
 
 `page` - `<number>` Page to return

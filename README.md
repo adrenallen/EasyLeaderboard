@@ -13,6 +13,7 @@
 
 ## Table of Contents
 - [:computer: API](#computer-api)
+  * [Postman collection](#postman-collection)
   * [Submit a new score](#submit-a-new-score)
   * [Get game scores](#get-game-scores)
 - [:package: Setup](#package-setup)
@@ -30,6 +31,14 @@
 
 ## :computer: API
 
+### Postman Collection
+There is an up to date Postman collection included in this repo to help test!
+
+[You can see it here](EasyLeaderboard.postman_collection.json) 
+
+[And it's under the Release section!](https://github.com/adrenallen/EasyLeaderboard/releases)
+
+---
 ### Submit a new score
 `/games/submit` - `POST`
 
@@ -51,6 +60,7 @@ TODO
 
 _NOTE: Using a game key that ends with `-basic-validation` will cause that game to automatically use the basic hash check for payload tampering._
 
+---
 ### Get game scores
 `/games/<game key>` - `GET`
 
@@ -67,6 +77,7 @@ Optional query params
 
 `page` - `<number>` Page to return
 
+---
 ## :package: Setup
 There are two requirements to run EasyLeaderboard.
 ### MongoDB

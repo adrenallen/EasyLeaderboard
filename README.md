@@ -24,6 +24,7 @@
     + [Example validator](#example-validator)
 - [:rocket: Ready To Go Clients](#rocket-ready-to-go-clients)
   * [Godot 4 Client](#godot-4-client)
+  * [Godot 3.5 Client](#godot-35-client)
 - [:bulb: Game Jam Advice](#bulb-game-jam-advice)
 - [:man_scientist: Future Goals](#man_scientist-future-goals)
 

@@ -1,0 +1,128 @@
+{
+	"info": {
+		"_postman_id": "438f53b7-9df3-4725-8a4d-00d509c5583e",
+		"name": "EasyLeaderboard",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get Leaderboard Result",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{easyleaderboard-url}}/games/{{game-key}}?asc=false&pagesize=10&page=1",
+					"host": [
+						"{{easyleaderboard-url}}"
+					],
+					"path": [
+						"games",
+						"{{game-key}}"
+					],
+					"query": [
+						{
+							"key": "asc",
+							"value": "false",
+							"description": "Sort results by score score ascending"
+						},
+						{
+							"key": "pagesize",
+							"value": "10",
+							"description": "Number of results to return per page"
+						},
+						{
+							"key": "page",
+							"value": "1",
+							"description": "Page to return"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Submit Leaderboard Score",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "game",
+							"value": "{{game-key}}",
+							"description": "game key",
+							"type": "default"
+						},
+						{
+							"key": "name",
+							"value": "Player Name",
+							"description": "Name of player",
+							"type": "default"
+						},
+						{
+							"key": "score",
+							"value": "12",
+							"description": "Score to submit",
+							"type": "default"
+						},
+						{
+							"key": "metaData",
+							"value": "{test: \"test\"}",
+							"description": "OPTIONAL - metadata about score",
+							"type": "default"
+						},
+						{
+							"key": "validation",
+							"value": "",
+							"description": "OPTIONAL - validation value!",
+							"type": "default",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "{{easyleaderboard-url}}/games/submit",
+					"host": [
+						"{{easyleaderboard-url}}"
+					],
+					"path": [
+						"games",
+						"submit"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "game-key",
+			"value": "easy-leaderboard-example"
+		},
+		{
+			"key": "easyleaderboard-url",
+			"value": "https://lb.userdefined.io"
+		}
+	]
+}

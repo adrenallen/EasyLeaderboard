@@ -116,6 +116,22 @@ To make the application reachable and always online, you will want to host it so
 - [Repl.it](https://replit.com/languages/nodejs)
     - Repl.it has an always-on tier of subscription. You can fork this repo and Replit can easily import it so you can edit it live. You may also be able to modify the app to use [Replit's key/value DB by using the code from this Replit that adds a layer of abstraction](https://github.com/adrenallen/replit-db-orm)
 
+## 🫙 Dockerized Setup 
+If you have [Docker](https://www.docker.com/) installed, you can simply run the `docker compose up -d` command to run the whole project in a containerized environment.  
+Even though this setup is best-suited for local development, it can be used in production too on your own server (VPS, AWS, Digital Ocean...).  
+
+You can also use `docker compose --profile=admin-panel up -d` to run a local admin panel for your mongo database.  
+
+Docker will use the same .env file used by the Node web server to resolve internal variables. In this way the containers are highly customizable together with the web server itself.  
+
+```
+# example configuration of .env in development
+MONGO_USERNAME=root
+MONGO_PASSWORD=example
+MONGO_HOST=mongo
+MONGO_PORT=27017
+PORT=6999
+```
 
 ## :wrench: Customization
 

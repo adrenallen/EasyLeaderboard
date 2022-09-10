@@ -144,6 +144,7 @@ _Note: You can define more than one validator for a given game, and they will al
 
 ## :rocket: Ready To Go Clients
 ### [Godot 4 Client](https://github.com/adrenallen/EasyLeaderboard-Godot)
+### [Godot 3.5 Client](https://github.com/adrenallen/EasyLeaderboard-Godot/tree/godot3.5)
 
 ## :bulb: Game Jam Advice
 For game jams, you likely will not need more than basic validation.

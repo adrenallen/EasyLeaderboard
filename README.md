@@ -55,7 +55,17 @@ Request Payload
 
 Response
 ```
-TODO
+{
+    "score": {
+        "game": "easy-leaderboard-example",
+        "name": "Player Name",
+        "score": 12,
+        "metaData": "{test: \"test\"}",
+        "date": "2022-09-10T00:25:41.068Z"
+    },
+    "scoresGreater": 20,
+    "scoresLesser": 5
+}
 ```
 
 _NOTE: Using a game key that ends with `-basic-validation` will cause that game to automatically use the basic hash check for payload tampering._
@@ -66,7 +76,22 @@ _NOTE: Using a game key that ends with `-basic-validation` will cause that game 
 
 Response
 ```
-TODO
+[
+    {
+        "game": "easy-leaderboard-example",
+        "name": "Garrett",
+        "score": 1003,
+        "metaData": "{\"metaData\":\"yo\"}",
+        "date": "2022-09-02T01:42:53.376Z"
+    },
+    {
+        "game": "easy-leaderboard-example",
+        "name": "Garrett",
+        "score": 123,
+        "metaData": "{\"metaData\":\"yo\"}",
+        "date": "2022-09-02T01:31:41.070Z"
+    }
+]
 ```
 
 Optional query params

@@ -25,7 +25,6 @@
 - [:rocket: Ready To Go Clients](#rocket-ready-to-go-clients)
   * [Godot 4 Client](#godot-4-client)
 - [:bulb: Game Jam Advice](#bulb-game-jam-advice)
-- [:parachute: Coming Soon](#parachute-coming-soon)
 - [:man_scientist: Future Goals](#man_scientist-future-goals)
 
 

@@ -1,12 +1,12 @@
 {
   "name": "EasyLeaderboard",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "A quick to setup and easily configurable leaderboard",
   "main": "index.js",
   "scripts": {
     "start": "node index.js"
   },
-  "author": "",
+  "author": "Garrett Allen",
   "license": "MIT",
   "dependencies": {
     "cors": "^2.8.5",
